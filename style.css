@@ -14,6 +14,10 @@
     top: 0px;
     left: 0px;
     text-align: center;
+    background-color: coral;
+    /* border-bottom: 1px solid white; */
+    /* background-color: #8a9b8; */
+    z-index: 5;
 
 
 }
@@ -35,7 +39,7 @@
     display: flex;
     margin-bottom: 7px;
     text-align: center;
-    background:rgba(7, 4, 4, 0.422);
+    /* background:rgba(7, 4, 4, 0.422); */
     border-radius: 20px;
 
 
@@ -141,35 +145,30 @@
 }
 
 
-.Services-box {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    column-gap: 50px;
-    margin-left: 150px;
-    margin-right: 150px;
-}
+
 
 #Services {
-    padding-top: 20vh;
-    min-height: 100vh;
-    background: radial-gradient(transparent, rgb(253, 249, 249), rgb(241, 241, 237));
+    padding-top: 20px;
+    /* background: radial-gradient(transparent, rgb(253, 249, 249), rgb(241, 241, 237)); */
+}
+.Services{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
 }
 .box img {
     border: 4px solid brown;
     border-radius: 40px;
-    margin-bottom: 30px;
-    margin-left: 20px;
-    width: 500px;
+    width: 450px;
     height: 400px;
-    
 
 }
 
-.Services h1 {
-    font-size: 100px;
+#Services h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
     text-align: center;
-    margin-top: -100px;
-    margin-bottom: 100px;
+   
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: brown;
 
@@ -185,8 +184,6 @@
 .box p {
     text-align: center;
     font-size: 30px;
-    padding-left: 100px;
-    padding-right: 100px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
@@ -420,25 +417,22 @@ footer {
         justify-content: start;
     }
 
-    div#Services {
-        min-height: 100vh;
-    }
+   
 
-    .Services h1 {
-        margin-top: 100px;
+ 
+    .box3{
+        grid-column: 1 / span 2;
     }
-
-    .Services-box {
-        margin: 0px;
-        display: flex;
-        flex-direction: column;
+    .Services{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        text-align: center;
     }
 
     .box {
         display: flex;
         flex-direction: column;
         margin-bottom: 50px;
-        background-color: bde0fe;
         padding: 30px;
         box-shadow: 2px 2px 16px 10px gray;
         border-radius: 10px;
@@ -537,26 +531,24 @@ footer {
       font-size: 50px;
     }
 
-    div#Services {
-        min-height: 100vh;
+   
+    /* .box3{
+        grid-column: 1 / span 2;
+    } */
+  
+    .box3{
+        grid-column: 1 / span 1;
     }
-
-    .Services h1 {
-        margin-top: 100px;
-        font-size: 50px;
-    }
-
-    .Services-box {
-        margin: 0px;
-        display: flex;
-        flex-direction: column;
+    .Services{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
     }
 
     .box {
         display: flex;
         flex-direction: column;
         margin-bottom: 50px;
-        background-color:bde0fe;
         padding: 30px;
         box-shadow: 2px 2px 16px 10px gray;
         border-radius: 10px;
@@ -573,6 +565,13 @@ footer {
         margin: 20px;
     }
 
+   
+  
+
+    .box h2 {
+        margin: 20px;
+    }
+
     #contact-section h1 {
         font-size: 50px;
     }
@@ -580,5 +579,8 @@ footer {
         width: 85% ;
         padding: 20px;
         margin: auto;
+    }
+    #client-section{
+        min-height: 90vh;
     }
 }
