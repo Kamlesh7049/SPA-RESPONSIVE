@@ -14,7 +14,7 @@
     top: 0px;
     left: 0px;
     text-align: center;
-    background-color: coral;
+    background-color:rgba(0, 0, 0, 0.647);
     /* border-bottom: 1px solid white; */
     /* background-color: #8a9b8; */
     z-index: 5;
@@ -48,7 +48,7 @@
 
 #navbar ul li {
     list-style: none;
-    font-size: 30px;
+    font-size: 25px;
     font-family: "Ubuntu", sans-serif;
     margin: 10px;
 
@@ -115,7 +115,7 @@
 
 #home h1 {
 
-    font-size: 100px;
+    font-size: 60px;
     font-weight: bold;
     padding: 20px;
     color: white;
@@ -123,7 +123,7 @@
 }
 
 #home p {
-    font-size: 26px;
+    font-size: 20px;
     padding: 5px;
     font-weight: bold;
     padding-left: 100px;
@@ -139,7 +139,7 @@
     background-color: brown;
     color: white;
     margin: 30PX;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -165,7 +165,7 @@
 }
 
 #Services h1 {
-    font-size: 70px;
+    font-size: 40px;
     margin-bottom: 20px;
     text-align: center;
    
@@ -176,14 +176,14 @@
 
 .box h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
 .box p {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
@@ -193,7 +193,7 @@
 
 #client-section {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     min-height: 110vh;
 }
@@ -208,7 +208,7 @@
 
 .client_upperContant h1 {
     margin-top: 10vh;
-    font-size: 100px;
+    font-size: 40px;
     color: rgb(130, 16, 16);
 
 }
@@ -237,6 +237,8 @@
 }
 
 /* Contact Section */
+
+
 #contact-section {
     width: 100%;
     min-height: 100vh;
@@ -245,14 +247,12 @@
     padding-bottom: 7vh;
 }
 
-
-
 #contact-section h1 {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
-    font-size: 100px;
-    margin-bottom: 10px;
+    /* margin-top: 40px; */
+    font-size: 25px;
+    /* margin-bottom: 10px; */
     padding: 20px;
     color: brown;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -260,7 +260,7 @@
 }
 
 #contact-box {
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     width: 100%;
     margin-top: 30px;
@@ -269,12 +269,11 @@
 
 
 #contact-box textarea {
-    font-size: 26px;
-    height: 100px;
+    font-size: 15px;
+    height: 60px;
     min-width: 250px;
-    /* border-radius: 30px; */
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 20px 30px;
+    padding: 12px;
     border: none;
     background: transparent;
     box-shadow: 1px 0px 20px -10px rgb(255, 0, 0);
@@ -282,11 +281,11 @@
 }
 
 #contact-box button {
-    font-size: 26px;
+    font-size: 20px;
     border-radius: 10px;
-    margin-top: 50px;
-    height: 70px;
-    width: 150px;
+    margin-top: 40px;
+    height: 35px;
+    width: 90px;
     background: transparent;
     color: #2b0808;
     font-weight: 500;
@@ -294,24 +293,51 @@
     
 
 }
+body{
+    /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
+}
 
 
-#contact-box form {
-    border: 1px solid red;
-    width: 32%;
+#contact-box {
+    width: 90%;
     margin: auto;
-    padding: 60px;
+    background-color: #ba0f0f0f;
+    padding: 20px;
     border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.leftbox{
+    min-height: 75vh;
+    height: 100%;
+    background-color: #673e631f;
+    width: 50%;
+    min-width: 300px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.leftbox img{
+    border-radius: 50%;
+}
+#contact-box form {
+    border: none;
+    background: #fff;
+    width: 50%;
+    /* min-width: 350px; */
+    /* margin: auto; */
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     box-shadow: 2px 3px 40px 10px #baba8b;
 }
 
 #contact-box input {
-    font-size: 26px;
-    height: 40px;
+    font-size: 15px;
+    height: 20px;
     min-width: 250px;
-    /* border-radius: 30px; */
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 20px 30px;
+    padding: 12px;
     border: none;
     background: transparent;
     box-shadow: 1px 0px 20px -10px orangered;
@@ -332,6 +358,48 @@
     box-shadow: 1px 1px 30px 10px #8a9b8b;
 
 }
+.social-media{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+.social-media ul  {
+    display: flex;
+    padding-left: 20px;
+    margin-top: 10px;
+    
+}
+.social-media ul li {
+    list-style: none;
+    font-size: 20px;
+    margin: 10px;
+    
+    
+}
+
+.social-media i {
+    background-color:rgba(165, 42, 42, 0.356);
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    
+
+}
+.social-media i:hover{
+    background-color:white;
+    color: #2b0808;
+}
+
+.Contact_p{
+     font-size: 20px; 
+     font-family: Georgia, 'Times New Roman', Times, serif; 
+    margin: 20px 0px;
+
+}
+
+
+
 
 footer {
     height: 5vh;
@@ -340,7 +408,7 @@ footer {
     display: flex;
     text-align: center;
     align-items: center;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0px;
     left: 0px;
     width: 100%;
@@ -363,21 +431,36 @@ footer {
         display: block;
        
     }
+    #contact-box {
+        flex-direction: column;
+        gap: 40px;
 
+    }
+   .leftbox{
+    width: 100%;
+    border-radius: 20px;
+   }
+   #contact-box form {
+    width: 100%;
+    border-radius: 20px;
+    margin: none;
+   }
     #navbar {
         justify-content: space-between;
     }
 
+  
     #navbar ul {
-        
-        flex-direction: column;
-        text-align: left;
         position: relative;
-        top: 80px;
-        background: color #333;
+        top: 160px;
         width: 100%;
+        background-color:rgba(0, 0, 0, 0.273);
         display: none;
         z-index: 5;
+    }
+    #navbar ul li{
+        text-align: left;
+
     }
     #navbar ul li a{
         color: white;
@@ -416,9 +499,6 @@ footer {
         padding-left: 20px;
         justify-content: start;
     }
-
-   
-
  
     .box3{
         grid-column: 1 / span 2;
@@ -453,15 +533,17 @@ footer {
         font-size: 50px;
     }
     #contact-box form{
-        width: 85% !important;
-        padding: 20px;
-        margin: auto;
+        /* width: 85% !important; */
+        /* padding: 20px; */
+        /* margin: auto; */
     }
 }
 
 
 
 /* mobile media query */
+
+
 @media screen and (max-width : 500px) {
     #navbar label {
         display: block;
